@@ -1,0 +1,12 @@
+{
+  "registry-mirrors": [
+	  "https://docker.xuanyuan.me"
+  ],
+  "dns": ["114.114.114.114", "223.5.5.5", "8.8.8.8"],
+  "max-concurrent-downloads": 5,
+  "max-download-attempts": 3,
+  "experimental": false,
+  "features": {
+    "buildkit": true
+  }
+}
