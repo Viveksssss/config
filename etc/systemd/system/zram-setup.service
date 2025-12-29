@@ -1,0 +1,15 @@
+[Unit]
+Description=Setup zram swap
+After=multi-user.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/zramctl -f -s 4096M
+ExecStart=/usr/bin/mkswap /dev/zram0
+ExecStart=/usr/bin/swapon /dev/zram0
+ExecStop=/usr/bin/swapoff /dev/zram0
+ExecStop=/usr/bin/zramctl -r /dev/zram0
+
+[Install]
+WantedBy=multi-user.target

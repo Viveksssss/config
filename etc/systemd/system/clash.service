@@ -1,0 +1,13 @@
+[Unit]
+Description=Clash Proxy
+After=network.target
+
+[Service]
+Type=simple
+# 根据模板文件内容设置 ExecStart
+# 通常模板文件可能包含 %i 参数，需要替换成具体值
+ExecStart=/usr/bin/clash -d /etc/clash
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

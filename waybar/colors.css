@@ -66,7 +66,9 @@
 
     @define-color scrim #000000;
 
-    @define-color secondary #d1c6a1;
+    /* @define-color secondary #d1c6a1; */
+
+    @define-color secondary #FF0033;
 
     @define-color secondary_container #4e472a;
 
@@ -78,7 +80,9 @@
 
     @define-color source_color #dabc2c;
 
-    @define-color surface #15130b;
+    /* @define-color surface #15130b; */
+
+    @define-color surface #FFFAFA;
 
     @define-color surface_bright #3c3930;
 
@@ -88,7 +92,7 @@
 
     /* @define-color surface_container_high #2d2a21; */
 
-    @define-color surface_container_high rgba(255,204,255,0.4);
+    @define-color surface_container_high rgba(255,204,255,0.3);
 
     @define-color surface_container_highest #38352b;
 

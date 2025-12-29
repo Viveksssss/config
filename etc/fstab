@@ -1,0 +1,19 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/nvme1n1p5
+UUID=1985771e-c63d-4f6c-8e20-a3ac109109f9	/         	ext4      	rw,relatime	0 1
+
+# /dev/nvme1n1p3
+UUID=B891-E276      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/nvme1n1p4
+# UUID=85690438-53f2-4d47-9ad9-f73efd141d2c	none      	swap      	defaults  	0 0
+
+# /dev/nvme0n1p5
+UUID=8d4b826a-1973-f344-855e-fa82425da872	/mnt/S		ext4		defaults,noatime	0 2
+
+
+# /dev/nvme0n1p1
+UUID=95C36673A99521A2	/mnt/games	ntfs-3g	uid=1000,gid=1000,umask=000,noatime,nodiratime 0 0

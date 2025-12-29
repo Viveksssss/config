@@ -343,6 +343,7 @@ window-rule {
     // You can get away with just app-id="wezterm" if you want.
     geometry-corner-radius 12
     clip-to-geometry true
+    // opacity 0.9
 }
 
 // Open the Firefox picture-in-picture player as floating by default.
@@ -354,6 +355,7 @@ window-rule {
     match app-id="waypaper"
     match app-id="dolphin"
     match app-id="OSD Lyrics"
+    match app-id="wlogout"
     open-floating true
 }
 
@@ -657,5 +659,6 @@ binds {
     Alt+Print { screenshot-window; }
     Mod+Shift+W { spawn "~/.config/niri/scripts/waypaper.sh"; }
     Ctrl+Alt+W { spawn-sh "pkill waybar || true && waybar";}
-    Mod+Backspace { spawn "~/.local/share/bin/logoutlaunch.sh" ;}
+    Mod+Backspace { spawn-sh "pkill wlogout || wlogout" ;}
+    Mod+R hotkey-overlay-title="Koodo-reader" { spawn "koodo-reader"; }
 }

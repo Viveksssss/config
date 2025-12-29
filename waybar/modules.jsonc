@@ -197,7 +197,8 @@
   "custom/wlogout": {
     "tooltip": false,
     "format": "󰐥",
-    "on-click": "~/.local/share/bin/logoutlaunch.sh",
+    // "on-click": "~/.local/share/bin/logoutlaunch.sh",
+    "on-click":"wlogout",
   },
   "custom/lockscreen": {
     "tooltip": false,
